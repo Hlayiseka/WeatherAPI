@@ -1,0 +1,14 @@
+page-home {
+    .box{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .box> div{
+        justify-content: center;
+        // padding: .0.5em 1em .3em 0;
+        // font-size: 30px;
+        // margin: 20px;
+        text-align: center;
+    }
+}

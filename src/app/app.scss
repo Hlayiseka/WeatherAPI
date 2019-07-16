@@ -1,0 +1,38 @@
+.home{
+    background-color: color($colors, dark);
+    color: color($colors, light);
+    margin-top: 30px;
+}
+
+.toolbar-title{
+    text-align: center;
+}
+
+.tabs-md .tab-button-icon{
+    color: #ccc;
+}
+.temp{
+    font-size: 50px;
+    font-weight: normal;
+}
+.description{
+    font-size: 20px;
+}
+input{
+    height: 30px;
+}
+.btn-search{
+    height: 30px;
+    width: 330px;
+}
+.icon img{
+    width: 60px;
+    height: 50px;
+    margin-left: 40%; 
+}
+.home .icon{
+    width: 200px;
+    background-size:cover;
+    position: relative; 
+
+}

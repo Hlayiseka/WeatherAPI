@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Weather info</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50 offset-12>
+        <h1 style="text-align: center">{{cityname}} / {{country}}</h1>
+        <p class="temp" style="text-align: center">{{temp}} &deg;</p>
+        <p class="description" style="text-align: center">{{description}}</p>
+        <span class="icon"><img id="icon" src="http://openweathermap.org/img/w/{{icon}}"></span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+          <ion-item>
+             <strong>Temp:</strong>   {{temp}} &deg;
+          </ion-item>
+          <ion-item>
+            <strong>Clouds:</strong>   {{clouds}}
+          </ion-item>
+          <ion-item>
+            <strong>Description:</strong>   {{description}}
+          </ion-item>
+          <ion-item>
+            <strong>Wind Speed:</strong>   {{wind}}
+          </ion-item>
+          <ion-item>
+            <strong>Wind Degrees:</strong>  {{winddeg}}
+          </ion-item>
+          <!-- <ion-item>
+            <strong>Wind Gust:</strong>  {{windgust}}
+          </ion-item> -->
+          <!-- <ion-item>
+            <strong>Humidity:</strong>  {{humidity}}
+          </ion-item> -->
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row>
+      <div class="box">
+        <div>
+          <input style="color: black" type="search" name="city" [(ngModel)]="city" placeholder="Enter location">
+          <input style="color: black" type="search" name="state" [(ngModel)]="state" placeholder="Enter country">
+          <button class="btn-search" (click)="getWeathers(city, state)">Search</button>
+        </div>
+      </div>
+    </ion-row> -->
+  </ion-grid>
+</ion-content>
+  
